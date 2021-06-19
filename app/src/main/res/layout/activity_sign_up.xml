@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_welcome"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello New User"
+            android:textSize="42sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nice To See You"
+            android:textSize="23sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher_foreground"
+            android:layout_below="@+id/ll_welcome"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+                android:id="@+id/ll_textViews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/ll_welcome"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Please Enter Username"
+                        android:backgroundTint="@color/white"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Email ID"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Password"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_textViews"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:shadowDy="5"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFEA00"
+        app:cornerRadius="5dp" />
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_signUp"
+        android:text="Already A User? Sign In"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_google"
+            android:text="GOOGLE"
+            android:layout_marginRight="5dp"
+            app:backgroundTint="#FFEA00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="#FFEA00"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="FACEBOOK"/>
+
+
+    </LinearLayout>
+
+        
+
+
+</RelativeLayout>

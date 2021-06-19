@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_person"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prathamesh"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="3dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_lastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Message"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
